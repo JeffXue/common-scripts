@@ -6,7 +6,7 @@ apt-get install libaio1 libaio-dev -y
 
 apt-get install mysql-client -y
 
-ls -s /opt/mysql/server-5.6/ /usr/local/mysql
+ln -s /opt/mysql/server-5.6/ /usr/local/mysql
 
 cd /opt/mysql/server-5.6
 
