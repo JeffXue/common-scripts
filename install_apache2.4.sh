@@ -1,10 +1,22 @@
-﻿#!/bin/bash
+#!/bin/bash
+mkdir temp
+cd temp
+wget https://raw.githubusercontent.com/JeffXue/common_packages/master/apr-1.4.5.tar.gz
+wget https://raw.githubusercontent.com/JeffXue/common_packages/master/apr-util-1.3.12.tar.gz
+wget https://raw.githubusercontent.com/JeffXue/common_packages/master/pcre-8.10.tar.gz
+wget https://raw.githubusercontent.com/JeffXue/common_packages/master/zlib-1.2.7.tar.gz
+wget https://raw.githubusercontent.com/JeffXue/common_packages/master/openssl-1.0.1p.tar.gz
+wget https://raw.githubusercontent.com/JeffXue/common_packages/master/httpd-2.4.3.tar.gz
+
 tar xvzf apr-1.4.5.tar.gz -C /usr/local/
 tar xvzf apr-util-1.3.12.tar.gz -C /usr/local/
 tar xvzf pcre-8.10.tar.gz -C /usr/local/
 tar xvzf zlib-1.2.7.tar.gz -C /usr/local/
 tar xvzf openssl-1.0.1p.tar.gz -C /usr/local/
 tar xvzf httpd-2.4.3.tar.gz -C /usr/local/
+
+cd ..
+rm -rf temp
 
 cd /usr/local/apr-1.4.5
 ./configure --prefix=/usr/local/apr

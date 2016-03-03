@@ -1,16 +1,9 @@
 #!/bin/bash
+
+echo "Default install mysql-5.6.16-debian6.0-x86_64.deb"
+echo "If different, you have to modify the script"
+
 time=`date +%Y%m%d%H%M`
-
-ftp_server=192.168.1.113
-ftp_user=admin
-ftp_password=123456
-
-ftp_response=`ftp -n -v << EOF 2>&1
-open $ftp_server
-user $ftp_user $ftp_password
-get mysql-5.6.16-debian6.0-x86_64.deb
-bye
-EOF`
 
 dpkg -i mysql-5.6.16-debian6.0-x86_64.deb
 
@@ -41,6 +34,3 @@ chown -R root .
 chown -R mysql data
 
 ./bin/mysqld_safe --user=mysql &
-
-echo "please run the mysql_init.sql!"
-
