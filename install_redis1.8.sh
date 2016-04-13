@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir temp
 cd temp
-wget https://raw.githubusercontent.com/JeffXue/common_packages/master/redis-2.8.17.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/redis-2.8.17.tar.gz
 
 tar xvzf redis-2.8.17.tar.gz -C /usr/local/
 

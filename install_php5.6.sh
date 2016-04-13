@@ -1,14 +1,14 @@
 #!/bin/bash
 mkdir temp
 cd temp
-wget https://raw.githubusercontent.com/JeffXue/common_packages/master/curl-7.45.0.tar.gz
-wget https://raw.githubusercontent.com/JeffXue/common_packages/master/freetype-2.4.0.tar.gz
-wget https://raw.githubusercontent.com/JeffXue/common_packages/master/jpegsrc.v9a.tar.gz
-wget https://raw.githubusercontent.com/JeffXue/common_packages/master/libpng-1.6.18.tar.gz
-wget https://raw.githubusercontent.com/JeffXue/common_packages/master/libmcrypt-2.5.8.tar.gz
-wget https://raw.githubusercontent.com/JeffXue/common_packages/master/libiconv-1.14.tar.gz
-wget https://raw.githubusercontent.com/JeffXue/common_packages/master/openssl-1.0.1p.tar.gz
-wget https://raw.githubusercontent.com/JeffXue/common_packages/master/php-5.6.0.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/curl-7.45.0.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/freetype-2.4.0.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/jpegsrc.v9a.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/libpng-1.6.18.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/libmcrypt-2.5.8.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/libiconv-1.14.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/openssl-1.0.1p.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/php-5.6.0.tar.gz
 
 tar -xvzf curl-7.45.0.tar.gz -C /usr/local
 tar -xvzf freetype-2.4.0.tar.gz -C /usr/local
