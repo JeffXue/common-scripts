@@ -35,11 +35,11 @@ cd /usr/local/zlib-1.2.7
 make && make install
 
 cd /usr/local/openssl-1.0.1p
-./config --prefix=/usr/local/openssl  -fPIC no-gost
+./config --prefix=/usr/local/openssl101p  -fPIC no-gost
 make depend
 make && make install
 
 cd /usr/local/httpd-2.4.3
-./configure --prefix=/usr/local/apache  --enable-mods-shared=all --enable-ssl --enable-proxy-http --enable-expires -enable-deflate --enable-dav --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util --with-z=/usr/local/zlib --with-pcre=/usr/local/pcre --with-ssl=/usr/local/openssl --with-mpm=event
+./configure --prefix=/usr/local/apache  --enable-mods-shared=all --enable-ssl --enable-proxy-http --enable-expires -enable-deflate --enable-dav --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util --with-z=/usr/local/zlib --with-pcre=/usr/local/pcre --with-ssl=/usr/local/openssl101p --with-mpm=event
 make && make install
 

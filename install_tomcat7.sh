@@ -1,11 +1,11 @@
 #!/bin/bash
 mkdir temp
 cd temp
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/apache-tomcat-7.0.67.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/apache-tomcat-7.0.68.tar.gz
 
-tar xvzf apache-tomcat-7.0.67.tar.gz -C /usr/local/
+tar xvzf apache-tomcat-7.0.68.tar.gz -C /usr/local/
 
 cd ..
 rm -rf temp
-echo "Tomcat 7.0.67 have installed in /usr/local"
+echo "Tomcat 7.0.68 have installed in /usr/local"
 echo "Please make sure you have install JDK7"
