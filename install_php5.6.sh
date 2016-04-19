@@ -23,38 +23,38 @@ cd ..
 rm -rf temp
 
 cd /usr/local/curl-7.45.0
-./configure --prefix=/usr/local/curl --with-ssl
+./configure --prefix=/usr/local/curl745 --with-ssl
 make && make install
 
 cd /usr/local/freetype-2.4.0
-./configure --prefix=/usr/local/freetype
+./configure --prefix=/usr/local/freetype240
 make && make install
 
 cd /usr/local/jpeg-9a
-./configure --prefix=/usr/local/jpeg
+./configure --prefix=/usr/local/jpeg9a
 make && make install
 
 cd /usr/local/libpng-1.6.18
-./configure --prefix=/usr/local/libpng
+./configure --prefix=/usr/local/libpng1618
 make && make install
 
 cd /usr/local/libmcrypt-2.5.8
-./configure --prefix=/usr/local/libmcrypt
+./configure --prefix=/usr/local/libmcrypt258
 make && make install
 
 cd /usr/local/libiconv-1.14.tar.gz
-./configure --prefix=/usr/local/libiconv
+./configure --prefix=/usr/local/libiconv114
 make && make install
 
 cd /usr/local/openssl-1.0.1p
-./config --prefix=/usr/local/openssl  -fPIC no-gost
+./config --prefix=/usr/local/openssl101p  -fPIC no-gost
 make depend
 make && make install
 
 apt-get install libxml2-dev libz-dev -y
 
 cd /usr/local/php-5.6.0
-./configure --prefix=/usr/local/php --with-mysql=mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-zlib --with-freetype-dir=/usr/local/freetype --with-jpeg-dir=/usr/local/jpeg --with-png-dir=/usr/local/libpng --enable-fpm --enable-cgi --enable-static --enable-maintainer-zts --enable-inline-optimization --enable-sockets --enable-wddx --enable-zip --enable-calendar --enable-bcmath --enable-ftp --enable-soap --enable-mbstring --disable-ipv6 --disable-debug --with-curl=/usr/local/curl --with-mcrypt=/usr/local/libmcrypt --with-openssl=/usr/local/openssl --with-iconv-dir=/usr/local/libiconv --with-apxs2=/usr/local/apache/bin/apxs
+./configure --prefix=/usr/local/php --with-mysql=mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-zlib --with-freetype-dir=/usr/local/freetype240 --with-jpeg-dir=/usr/local/jpeg9a --with-png-dir=/usr/local/libpng1618 --enable-fpm --enable-cgi --enable-static --enable-maintainer-zts --enable-inline-optimization --enable-sockets --enable-wddx --enable-zip --enable-calendar --enable-bcmath --enable-ftp --enable-soap --enable-mbstring --disable-ipv6 --disable-debug --with-curl=/usr/local/curl745 --with-mcrypt=/usr/local/libmcrypt258t --with-openssl=/usr/local/openssl101pl --with-iconv-dir=/usr/local/libiconv114 --with-apxs2=/usr/local/apache/bin/apxs
 make && make install
 
 cp php.ini-production /usr/local/php/lib/php.ini

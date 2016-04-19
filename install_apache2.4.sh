@@ -19,19 +19,19 @@ cd ..
 rm -rf temp
 
 cd /usr/local/apr-1.4.5
-./configure --prefix=/usr/local/apr
+./configure --prefix=/usr/local/apr145
 make && make install
 
 cd /usr/local/apr-util-1.3.12
-./configure --prefix=/usr/local/apr-util --with-apr=/usr/local/apr
+./configure --prefix=/usr/local/apr-util1312 --with-apr=/usr/local/apr145
 make && make install
 
 cd /usr/local/pcre-8.10
-./configure --prefix=/usr/local/pcre
+./configure --prefix=/usr/local/pcre810
 make && make install
 
 cd /usr/local/zlib-1.2.7
-./configure --prefix=/usr/local/zlib
+./configure --prefix=/usr/local/zlib127
 make && make install
 
 cd /usr/local/openssl-1.0.1p
@@ -40,6 +40,6 @@ make depend
 make && make install
 
 cd /usr/local/httpd-2.4.3
-./configure --prefix=/usr/local/apache  --enable-mods-shared=all --enable-ssl --enable-proxy-http --enable-expires -enable-deflate --enable-dav --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util --with-z=/usr/local/zlib --with-pcre=/usr/local/pcre --with-ssl=/usr/local/openssl101p --with-mpm=event
+./configure --prefix=/usr/local/apache  --enable-mods-shared=all --enable-ssl --enable-proxy-http --enable-expires -enable-deflate --enable-dav --with-apr=/usr/local/apr145 --with-apr-util=/usr/local/apr-util1312 --with-z=/usr/local/zlib127 --with-pcre=/usr/local/pcre810 --with-ssl=/usr/local/openssl101p --with-mpm=event
 make && make install
 

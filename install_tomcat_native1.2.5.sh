@@ -15,7 +15,7 @@ rm -rf temp
 apt-get install libapr1-dev libssl-dev -y
 
 cd /usr/local/apr-1.4.5
-./configure --prefix=/usr/local/apr
+./configure --prefix=/usr/local/apr145
 make && make install
 
 cd /usr/local/openssl-1.0.2g
@@ -24,7 +24,7 @@ make depend
 make && make install
 
 cd /usr/local/tomcat-native-1.2.5-src/native
-./configure --with-apr=/usr/local/apr --with-ssl=/usr/local/openssl102g --with-java-home=/usr/local/jdk1.7.0_79 --prefix=/usr/local/apache-tomcat-7.0.68
+./configure --with-apr=/usr/local/apr145 --with-ssl=/usr/local/openssl102g --with-java-home=/usr/local/jdk1.7.0_79 --prefix=/usr/local/apache-tomcat-7.0.68
 make && make install
 
 cp /usr/local/apache-tomcat-7.0.68/lib/libtcnative-1.* /usr/lib/
