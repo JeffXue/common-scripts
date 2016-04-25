@@ -54,7 +54,7 @@ make && make install
 apt-get install libxml2-dev libz-dev -y
 
 cd /usr/local/php-5.6.0
-./configure --prefix=/usr/local/php --with-mysql=mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-zlib --with-freetype-dir=/usr/local/freetype240 --with-jpeg-dir=/usr/local/jpeg9a --with-png-dir=/usr/local/libpng1618 --enable-fpm --enable-cgi --enable-static --enable-maintainer-zts --enable-inline-optimization --enable-sockets --enable-wddx --enable-zip --enable-calendar --enable-bcmath --enable-ftp --enable-soap --enable-mbstring --disable-ipv6 --disable-debug --with-curl=/usr/local/curl745 --with-mcrypt=/usr/local/libmcrypt258t --with-openssl=/usr/local/openssl101pl --with-iconv-dir=/usr/local/libiconv114 --with-apxs2=/usr/local/apache/bin/apxs
+./configure --prefix=/usr/local/php --with-mysql=mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-zlib --with-freetype-dir=/usr/local/freetype240 --with-jpeg-dir=/usr/local/jpeg9a --with-png-dir=/usr/local/libpng1618 --enable-fpm --enable-cgi --enable-static --enable-maintainer-zts --enable-inline-optimization --enable-sockets --enable-wddx --enable-zip --enable-calendar --enable-bcmath --enable-ftp --enable-soap --enable-mbstring --disable-ipv6 --disable-debug --with-curl=/usr/local/curl745 --with-mcrypt=/usr/local/libmcrypt258 --with-openssl=/usr/local/openssl101p --with-iconv-dir=/usr/local/libiconv114 --with-apxs2=/usr/local/apache/bin/apxs
 make && make install
 
 cp php.ini-production /usr/local/php/lib/php.ini
