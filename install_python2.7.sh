@@ -13,9 +13,11 @@ cd ..
 rm -rf temp
 
 apt-get install libssl-dev -y
+apt-get install openssl -y
+apt-get install python-openssl -y
 
 cd /usr/local/Python-2.7.10
-./configure
+./configure --with-ssl
 make && make install
 
 cd /usr/local/setuptools-18.5
