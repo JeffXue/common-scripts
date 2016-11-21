@@ -4,8 +4,8 @@ cd temp
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/libevent-2.0.22-stable.tar.gz
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/memcached-1.4.25.tar.gz
 
-tar xvzf libevent-2.0.22-stable.tar.gz -C /usr/local
-tar xvf memcached-1.4.25.tar.gz -C /usr/local/
+tar xzf libevent-2.0.22-stable.tar.gz -C /usr/local
+tar xzf memcached-1.4.25.tar.gz -C /usr/local/
 
 cd ..
 rm -rf temp

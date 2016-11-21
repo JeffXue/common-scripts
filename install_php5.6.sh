@@ -10,14 +10,14 @@ wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_pac
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/openssl-1.0.1p.tar.gz
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/php-5.6.0.tar.gz
 
-tar -xvzf curl-7.45.0.tar.gz -C /usr/local
-tar -xvzf freetype-2.4.0.tar.gz -C /usr/local
-tar -xvzf jpegsrc.v9a.tar.gz -C /usr/local
-tar -xvzf libpng-1.6.18.tar.gz -C /usr/local
-tar -xvzf libmcrypt-2.5.8.tar.gz -C /usr/local
-tar -xvzf libiconv-1.14.tar.gz -C /usr/local
-tar -xvzf openssl-1.0.1p.tar.gz -C /usr/local
-tar -xvzf php-5.6.0.tar.gz -C /usr/local
+tar -xzf curl-7.45.0.tar.gz -C /usr/local
+tar -xzf freetype-2.4.0.tar.gz -C /usr/local
+tar -xzf jpegsrc.v9a.tar.gz -C /usr/local
+tar -xzf libpng-1.6.18.tar.gz -C /usr/local
+tar -xzf libmcrypt-2.5.8.tar.gz -C /usr/local
+tar -xzf libiconv-1.14.tar.gz -C /usr/local
+tar -xzf openssl-1.0.1p.tar.gz -C /usr/local
+tar -xzf php-5.6.0.tar.gz -C /usr/local
 
 cd ..
 rm -rf temp

@@ -6,10 +6,10 @@ wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_pac
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/lua-5.3.2.tar.gz
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/vim-7.4.tar.bz2
 
-tar xvzf ncurses-6.0.tar.gz -C /usr/local/
-tar xvzf readline-6.3.tar.gz -C /usr/local/
-tar xvzf lua-5.3.2.tar.gz -C /usr/local/
-tar xvjf vim-7.4.tar.bz2 -C /usr/local/
+tar xzf ncurses-6.0.tar.gz -C /usr/local/
+tar xzf readline-6.3.tar.gz -C /usr/local/
+tar xzf lua-5.3.2.tar.gz -C /usr/local/
+tar xjf vim-7.4.tar.bz2 -C /usr/local/
 
 cd ..
 rm -rf temp

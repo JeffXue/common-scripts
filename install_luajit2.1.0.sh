@@ -3,7 +3,7 @@ mkdir temp
 cd temp
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/LuaJIT-2.1.0-beta2.tar.gz
 
-tar xvzf LuaJIT-2.1.0-beta2.tar.gz -C /usr/local/
+tar xzf LuaJIT-2.1.0-beta2.tar.gz -C /usr/local/
 
 cd ..
 rm -rf temp

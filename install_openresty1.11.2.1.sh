@@ -11,6 +11,7 @@ cd ..
 rm -rf temp
 
 cd /usr/local/openresty-1.11.2.1
+./configure
 make
 make install
 

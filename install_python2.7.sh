@@ -5,9 +5,9 @@ wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_pac
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/setuptools-18.5.tar.gz
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/pip-7.1.2.tar.gz
 
-tar xvzf Python-2.7.10.tgz -C /usr/local/
-tar xvzf pip-7.1.2.tar.gz -C /usr/local/
-tar xvzf setuptools-18.5.tar.gz -C /usr/local/
+tar xzf Python-2.7.10.tgz -C /usr/local/
+tar xzf pip-7.1.2.tar.gz -C /usr/local/
+tar xzf setuptools-18.5.tar.gz -C /usr/local/
 
 cd ..
 rm -rf temp
