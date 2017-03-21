@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir temp
 cd temp
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/apache-tomcat-7.0.68.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/apache-tomcat-7.0.68.tar.gz
 
 tar xzf apache-tomcat-7.0.68.tar.gz -C /usr/local/
 

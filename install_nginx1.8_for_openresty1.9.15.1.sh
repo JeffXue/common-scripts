@@ -1,10 +1,10 @@
 #!/bin/bash
 mkdir temp
 cd temp
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/nginx-1.8.1.tar.gz
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/pcre-8.10.tar.gz
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/zlib-1.2.7.tar.gz
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/openssl-1.0.1p.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/nginx-1.8.1.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/pcre-8.10.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/zlib-1.2.7.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/openssl-1.0.1p.tar.gz
 
 tar xzf nginx-1.8.1.tar.gz -C /usr/local/
 tar xzf pcre-8.10.tar.gz -C /usr/local/

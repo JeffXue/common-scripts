@@ -3,7 +3,7 @@ apt-get install libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl mak
 
 mkdir temp
 cd temp
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/openresty-1.9.15.1.tar.gz 
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/openresty-1.9.15.1.tar.gz 
 
 tar xvzf openresty-1.9.15.1.tar.gz  -C /usr/local/
 

@@ -1,9 +1,9 @@
 #!/bin/bash
 mkdir temp
 cd temp
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/apr-1.4.5.tar.gz
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/openssl-1.0.2g.tar.gz
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common_packages/master/tomcat-native-1.2.5-src.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/apr-1.4.5.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/openssl-1.0.2g.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/tomcat-native-1.2.5-src.tar.gz
 
 tar xzf apr-1.4.5.tar.gz -C /usr/local/
 tar xzf openssl-1.0.2g.tar.gz -C /usr/local/
