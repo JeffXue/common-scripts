@@ -42,7 +42,7 @@ cd /usr/local/libmcrypt-2.5.8
 ./configure --prefix=/usr/local/libmcrypt258
 make && make install
 
-cd /usr/local/libiconv-1.14.tar.gz
+cd /usr/local/libiconv-1.14
 ./configure --prefix=/usr/local/libiconv114
 make && make install
 
