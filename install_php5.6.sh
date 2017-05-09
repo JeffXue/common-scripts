@@ -8,7 +8,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-pac
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/libmcrypt-2.5.8.tar.gz
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/libiconv-1.14.tar.gz
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/openssl-1.0.1p.tar.gz
-wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/php-5.6.0.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/php-5.6.30.tar.gz
 
 tar -xzf curl-7.45.0.tar.gz -C /usr/local
 tar -xzf freetype-2.4.0.tar.gz -C /usr/local
@@ -17,7 +17,7 @@ tar -xzf libpng-1.6.18.tar.gz -C /usr/local
 tar -xzf libmcrypt-2.5.8.tar.gz -C /usr/local
 tar -xzf libiconv-1.14.tar.gz -C /usr/local
 tar -xzf openssl-1.0.1p.tar.gz -C /usr/local
-tar -xzf php-5.6.0.tar.gz -C /usr/local
+tar -xzf php-5.6.30.tar.gz -C /usr/local
 
 cd ..
 rm -rf temp
@@ -54,7 +54,7 @@ make && make install
 apt-get install libxml2-dev libz-dev -y
 
 cd /usr/local/php-5.6.0
-./configure --prefix=/usr/local/php --with-mysql=mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-zlib --with-freetype-dir=/usr/local/freetype240 --with-jpeg-dir=/usr/local/jpeg9a --with-png-dir=/usr/local/libpng1618 --enable-fpm --enable-cgi --enable-static --enable-maintainer-zts --enable-inline-optimization --enable-sockets --enable-wddx --enable-zip --enable-calendar --enable-bcmath --enable-ftp --enable-soap --enable-mbstring --disable-ipv6 --disable-debug --with-curl=/usr/local/curl745 --with-mcrypt=/usr/local/libmcrypt258 --with-openssl=/usr/local/openssl101p --with-iconv-dir=/usr/local/libiconv114 --with-apxs2=/usr/local/apache/bin/apxs
+./configure --prefix=/usr/local/php --with-mysql=mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-zlib --with-freetype-dir=/usr/local/freetype240 --with-jpeg-dir=/usr/local/jpeg9a --with-png-dir=/usr/local/libpng1618 --enable-fpm --enable-cgi --enable-static --enable-maintainer-zts --enable-inline-optimization --enable-sockets --enable-wddx --enable-zip --enable-calendar --enable-bcmath --enable-ftp --enable-soap --enable-mbstring --disable-ipv6 --disable-debug --with-curl=/usr/local/curl745 --with-mcrypt=/usr/local/libmcrypt258 --with-openssl=/usr/local/openssl101p --with-iconv-dir=/usr/local/libiconv114 --with-apxs2=/usr/local/apache/bin/apxs --with-gd
 make && make install
 
 cp php.ini-production /usr/local/php/lib/php.ini
