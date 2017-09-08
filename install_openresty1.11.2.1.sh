@@ -15,3 +15,5 @@ cd /usr/local/openresty-1.11.2.1
 make
 make install
 
+wget https://raw.githubusercontent.com/cloudflare/lua-resty-cookie/master/lib/resty/cookie.lua -P /usr/local/openresty/lualib/resty/
+
