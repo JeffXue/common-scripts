@@ -4,10 +4,12 @@ cd temp
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/apr-1.4.5.tar.gz
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/openssl-1.0.2g.tar.gz
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/tomcat-native-1.2.5-src.tar.gz
+wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/apache-tomcat-7.0.68.tar.gz
 
 tar xzf apr-1.4.5.tar.gz -C /usr/local/
 tar xzf openssl-1.0.2g.tar.gz -C /usr/local/
 tar xzf tomcat-native-1.2.5-src.tar.gz -C /usr/local/
+tar xzf apache-tomcat-7.0.68.tar.gz -C /usr/local/
 
 cd ..
 rm -rf temp
