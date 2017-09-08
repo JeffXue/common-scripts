@@ -5,13 +5,15 @@ mkdir temp
 cd temp
 wget --no-check-certificate https://raw.githubusercontent.com/JeffXue/common-packages/master/openresty-1.9.15.1.tar.gz 
 
-tar xvzf openresty-1.9.15.1.tar.gz  -C /usr/local/
+tar xvzf openresty-1.9.15.1.tar.gz  -C /usr/local/ 
 
 cd ..
 rm -rf temp
 
 cd /usr/local/openresty-1.9.15.1
-./configure
+./configure 
 make
 make install
+
+wget https://raw.githubusercontent.com/cloudflare/lua-resty-cookie/master/lib/resty/cookie.lua -P /usr/local/openresty/lualib/resty/
 
