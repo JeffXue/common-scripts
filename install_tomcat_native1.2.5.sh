@@ -29,5 +29,7 @@ cd /usr/local/tomcat-native-1.2.5-src/native
 ./configure --with-apr=/usr/local/apr145 --with-ssl=/usr/local/openssl102g --with-java-home=/usr/local/jdk1.7.0_79 --prefix=/usr/local/apache-tomcat-7.0.68
 make && make install
 
-cp /usr/local/apache-tomcat-7.0.68/lib/libtcnative-1.* /usr/lib/
+cp /usr/local/apache-tomcat-7.0.68/lib/libtcnative-1.so.0.2.5 /usr/lib/
+ln -s /usr/lib/libtcnative-1.so.0.2.5 /usr/lib/libtcnative-1.so
+ln -s /usr/lib/libtcnative-1.so.0.2.5 /usr/lib/libtcnative-1.so.0
 
